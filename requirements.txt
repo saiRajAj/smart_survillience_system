@@ -1,0 +1,6 @@
+flask>=3.0
+ultralytics>=8.3
+opencv-python>=4.8
+numpy>=1.26
+mediapipe>=0.10.20
+python-dotenv>=1.0
