@@ -10,7 +10,6 @@ MODELS.mkdir(exist_ok=True)
 # YOLO model
 # -----------------------------
 yolo_path = MODELS / "yolov8n.pt"
-
 if not yolo_path.exists():
     print("Downloading YOLOv8n...")
     YOLO(str(yolo_path))
@@ -28,7 +27,6 @@ pose_url = (
 )
 
 pose_path = MODELS / "pose_landmarker_full.task"
-
 if not pose_path.exists():
     print("Downloading MediaPipe Pose Landmarker...")
     urlretrieve(pose_url, pose_path)
